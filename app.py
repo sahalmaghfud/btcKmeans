@@ -76,10 +76,10 @@ st.subheader(" Input Data")
 col1, col2 = st.columns(2)
 
 with col1:
-    price_change = st.number_input("📈 Price Change", value=0.0)
+    price_change = st.number_input(" Price Change", value=0.0)
 
 with col2:
-    volume = st.number_input("🔊 Volume", value=100000.0)
+    volume = st.number_input(" Volume", value=100000.0)
 
 if st.button("🎯 Prediksi", type="primary"):
     # Buat DataFrame Spark dari input user
