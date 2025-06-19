@@ -32,30 +32,21 @@ pipeline_model, kmeans_model = load_models()
 # Data Cluster Analysis
 # -----------------------------------
 cluster_data = {
-    "Cluster": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    "Cluster": [0, 1, 2, 3, 4],
     "Ciri Khas": [
-        "Volume sangat kecil, Price Change mendekati nol",
-        "Volume sangat tinggi, Price Change kecil",
-        "Price turun, volume sedang",
-        "Price turun banyak, volume tinggi",
-        "Price naik besar, volume tinggi",
-        "Volume tinggi, perubahan harga kecil",
-        "Volume menengah-tinggi, perubahan harga kecil",
-        "Volume sedang, perubahan harga kecil hingga sedang",
-        "Volume Menengah, Price Change kecil"
+        "Harga turun besar, aktivitas sedang",
+        "Harga stabil, aktivitas rendah",
+        "Aktivitas sangat tinggi, harga tetap kecil",
+        "Harga naik besar, aktivitas sedang",
+        "Harga stabil, aktivitas tinggi"
     ],
     "Analisis": [
-    "Pasar sedang sepi; tidak banyak transaksi atau perubahan harga.",
-    "Ada transaksi besar tapi harga tetap stabil; mungkin ada yang akumulasi dalam jumlah besar.",
-    "Harga berpotensi turun; mulai terlihat minat untuk jual, tapi belum terlalu ramai.",
-    "Harga turun drastis dengan volume besar; kemungkinan karena banyak orang panik dan menjual aset.",
-    "Harga naik tajam; bisa jadi karena berita positif atau banyak yang spekulasi.",
-    "Volume besar tapi harga tidak banyak berubah; mungkin hanya perpindahan aset antar pemilik besar (whale).",
-    "Harga cenderung stabil meski volume tinggi; kemungkinan pasar sedang konsolidasi.",
-    "Aktivitas pasar normal seperti biasanya; tidak ada pergerakan mencolok.",
-    "Mirip seperti poin 1 dan 5; volume besar tapi harga tetap tidak banyak berubah."
+        "Menunjukkan respons negatif cukup kuat dari sebagian orang.",
+        "Pasar sedang tenang, tidak banyak yang melakukan aktivitas.",
+        "Banyak aktivitas tapi tidak ada perubahan nilai yang signifikan; bisa jadi kondisi saling menahan.",
+        "Respons positif yang kuat dari banyak pihak terhadap suatu hal.",
+        "Orang-orang aktif, tapi belum ada arah perubahan yang jelas, mungkin menunggu sesuatu."
     ]
-
 }
 
 # -----------------------------------
